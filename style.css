@@ -1,0 +1,39 @@
+/* Custom Tech Theme */
+body {
+    background-color: #020617;
+    color: #f8fafc;
+    overflow-x: hidden;
+    background-image: 
+        radial-gradient(circle at 50% 50%, #1e293b 0%, #020617 100%);
+}
+
+.nav-blur {
+    background: rgba(2, 6, 23, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.upload-box {
+    border: 2px dashed #334155;
+    background: rgba(15, 23, 42, 0.5);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.upload-box:hover {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.05);
+}
+
+#imgContainer img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
